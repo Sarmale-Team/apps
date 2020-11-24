@@ -26,10 +26,9 @@ function ChainImg ({ className = '', logo, onClick }: Props): React.ReactElement
 
   return (
     <img
-      alt='chain logo'
-      className={`${className}${isEmpty ? ' highlight--bg' : ''}`}
+       className={`${className}${isEmpty ? ' highlight--bg' : ''}`}
       onClick={onClick}
-      src={img}
+      
     />
   );
 }

@@ -46,8 +46,8 @@ function createDev (t: TFunction): LinkOption[] {
       dnslink: 'local',
       info: 'local',
       text: t('rpc.local', 'Local Node', { ns: 'apps-config' }),
-      textBy: '127.0.0.1:9944',
-      value: 'ws://127.0.0.1:9944'
+      textBy: '167.86.115.158:9944',
+      value: 'ws://167.86.115.158:9944'
     }
   ];
 }
@@ -374,21 +374,7 @@ function createCustom (t: TFunction): LinkOption[] {
 export function createWsEndpoints (t: TFunction): LinkOption[] {
   return [
     ...createCustom(t),
-    {
-      isHeader: true,
-      text: t('rpc.header.live', 'Live networks', { ns: 'apps-config' }),
-      textBy: '',
-      value: ''
-    },
-    ...createLiveNetworks(t),
-    {
-      isHeader: true,
-      text: t('rpc.header.test', 'Test networks', { ns: 'apps-config' }),
-      textBy: '',
-      value: ''
-    },
-    ...createTestNetworks(t),
-    {
+        {
       isDevelopment: true,
       isHeader: true,
       text: t('rpc.header.dev', 'Development', { ns: 'apps-config' }),
