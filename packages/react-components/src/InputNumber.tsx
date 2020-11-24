@@ -258,7 +258,7 @@ function InputNumber ({ autoFocus, bitLength = DEFAULT_BITLENGTH, children, clas
       isError={!isValid || isError}
       isFull={isFull}
       isWarning={isWarning}
-      label={label}
+      label='ETP3'
       labelExtra={labelExtra}
       maxLength={maxLength || maxValueLength}
       onChange={_onChange}
@@ -273,7 +273,7 @@ function InputNumber ({ autoFocus, bitLength = DEFAULT_BITLENGTH, children, clas
     >
       {!!si && (
         <Dropdown
-          defaultValue={si.value}
+          defaultValue='ETP3'
           dropdownClassName='ui--SiDropdown'
           isButton
           onChange={_onSelectSiUnit}
